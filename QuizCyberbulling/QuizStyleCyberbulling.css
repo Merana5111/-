@@ -632,6 +632,9 @@ body {
     .app {
         padding: 20px;
     }
+    .comment-popup {
+        display: none;
+    }
 
     .start-quiz-btn {
         width: 180px;

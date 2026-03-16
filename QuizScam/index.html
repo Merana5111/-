@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обман в интернете викторина</title>
+    <link rel="stylesheet" href="QuizStyleScam.css">
+</head>
+<body>
+
+
+<div class="modal" id="welcome-modal">
+    <div class="modal-content-wrapper">
+        <div class="modal-header">
+            <div class="title">ОБМАН В ИНТЕРНЕТЕ</div>
+            <button data-close-button class="close-button"><img src="imgQuiz/close.svg" alt="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+            <p>Эта викторина поможет вам проверить свои знания о мошенничестве в сети и научиться распознавать уловки аферистов. Обман в интернете — одна из самых массовых и быстрорастущих угроз цифрового мира, с которой может столкнуться каждый: от ребенка, мечтающего о новом скине в игре, до пенсионера, осваивающего смартфон, и взрослого человека в поисках выгодной подработки.
+
+                В отличие от уличного мошенничества, в онлайне аферисты действуют скрытно и технологично. Они создают идеальные ловушки: фейковые сайты-двойники популярных магазинов, взломанные аккаунты друзей с просьбами занять деньги, поддельные объявления о продаже товаров и даже целые колл-центры с профессиональными психологами, обученными давить на эмоции и вытягивать средства.</p>
+
+            <div class="modal-video-corner" id="video-corner">
+                <div class="video-thumbnail" id="video-thumbnail">
+                    <div class="play-button">
+                        <img src="imgQuiz/icons8-play-64.png">
+                    </div>
+                </div>
+                <iframe id="youtube-iframe"
+                        src="https://www.youtube.com/embed/JhAqw0SyEOM?rel=1"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="display: none;">
+                </iframe>
+            </div>
+            <p>Анонимность и возможность менять цифровые личности развязывают руки преступникам: отсутствие прямого контакта позволяет им годами выманивать состояния, не испытывая угрызений совести. Последствия для жертв разрушительны: потеря личных сбережений, оформленные мошенниками кредиты на чужое имя, долги и глубокое чувство стыда, из-за которого люди боятся обращаться в полицию.</p>
+            <p>Пройди короткий тест, чтобы понять, насколько хорошо ты защищен от цифровых аферистов и умеешь распознавать их ловушки до того, как попадешься на крючок.</p>
+        </div>
+    </div>
+    <button id="start-quiz-btn" class="quiz-btn start-quiz-btn">НАЧАТЬ ТЕСТ</button>
+</div>
+
+<div id="overlay"></div>
+
+<div class="app">
+    <div id="comment-popup" class="comment-popup hidden">
+        <div class="comment-content">
+            <img id="comment-image" class="comment-image" src="">
+            <p id="comment-text">Подсказка появится здесь</p>
+            <div class="comment-arrow"></div>
+        </div>
+
+    </div>
+    <h1>Обман в интернете тест</h1>
+
+    <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+
+        <div id="answer-buttons" class="answer-buttons">
+        </div>
+
+        <div class="quiz-footer">
+            <button id="next-btn" class="quiz-btn next-btn">Далее</button>
+
+            <div class="nav-links">
+                <a href="../index.html" id="backtomenu-btn" class="nav-link">← На главную</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="QuizScriptScam.js"></script>
+</body>
+</html>

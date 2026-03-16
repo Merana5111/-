@@ -671,9 +671,9 @@ header .logo {
 }
 
 @media (max-width: 375px) {
-    .sidebar { transform: translateX(310px); }
+    .sidebar { transform: translateX(360px); }
     .sidebar-links { margin-top: 390px; }
-    input:checked ~ .sidebar { transform: translateX(180px); }
+    input:checked ~ .sidebar { transform: translateX(135px); }
     .textBox ul li a { height: 200px; width: 155px; font-size: 1.0em; }
     .img-A1, .img-A2, .img-B1, .img-B2 { bottom: 155px; width: 95px; height: 95px; }
     .title-text {

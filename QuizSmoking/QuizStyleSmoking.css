@@ -640,6 +640,9 @@ body {
         border-width: 4px;
         transform: translate(-50%, 50%);
     }
+    .comment-popup {
+        display: none;
+    }
 
     .modal {
         max-height: 90vh;

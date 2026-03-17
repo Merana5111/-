@@ -353,7 +353,7 @@ function initVideoFunctionality() {
     videoModal.innerHTML = `
         <div class="video-modal-content">
             <div class="close-video-modal">×</div>
-            <iframe src="https://www.youtube.com/embed/JhAqw0SyEOM?rel=0" 
+            <iframe src="https://www.youtube.com/embed/exmFZkWP3lc?rel=0ф" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>

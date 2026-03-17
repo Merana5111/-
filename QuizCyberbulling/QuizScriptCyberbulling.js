@@ -367,7 +367,7 @@ function initVideoFunctionality() {
             videoModal.classList.add('active');
             document.body.style.overflow = 'hidden';
             const modalIframe = videoModal.querySelector('iframe');
-            modalIframe.src = 'https://youtu.be/exmFZkWP3lc?si=A1t3r1l-KEnrNSLU';
+            modalIframe.src = 'https://www.youtube.com/embed/exmFZkWP3lc?rel=0';
         });
     }
 

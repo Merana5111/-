@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курение викторина</title>
+    <link rel="stylesheet" href="QuizStyleDrugs.css">
+</head>
+<body>
+
+<a href="../index.html" class="back-to-main-btn">НА ГЛАВНУЮ</a>
+<div class="modal" id="welcome-modal">
+    <div class="modal-content-wrapper">
+        <div class="modal-header">
+            <div class="title">НАРКОТИКИ</div>
+            <button data-close-button class="close-button"><img src="imgQuiz/close.svg" alt="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+            <p>Эта викторина поможет вам проверить свои знания о реальных последствиях употребления наркотиков, а также разобраться в мифах, которые окружают эту зависимость. В отличие от стереотипов прошлого, современная наркотическая угроза часто маскируется под «легкий» способ расслабиться или «безвредный» эксперимент, проникая в жизнь через моду, музыку и соцсети, создавая иллюзию контроля и элитарности. Вред включает не только разрушение мозга и внутренних органов, но и гораздо более скрытые процессы: необратимые изменения психики, потерю связи с реальностью, деградацию личности и колоссальную нагрузку на сердечно-сосудистую систему.</p>
+
+            <div class="modal-video-corner" id="video-corner">
+                <div class="video-thumbnail" id="video-thumbnail">
+                    <div class="play-button">
+                        <img src="imgQuiz/icons8-play-64.png">
+                    </div>
+                </div>
+                <iframe id="youtube-iframe"
+                        src="https://www.youtube.com/embed/JhAqw0SyEOM?rel=1"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="display: none;">
+                </iframe>
+            </div>
+
+            <p>Маркетинг и пропаганда в интернете развязывают руки распространителям: отсутствие мгновенных видимых последствий и «культурный» антураж снижают чувство опасности, позволяя зависимости развиваться незаметно, но стремительно. Последствия для организма разрушительны: зависимые испытывают хроническую усталость, паранойю и тревожность, что ведет к снижению успеваемости, социальной изоляции, криминалу, а в тяжелых случаях — к передозировкам и летальному исходу. Борьба с ней лежит в понимании работы маркетинговых ловушек и создания здоровой среды, где модно быть свободным от зависимости.</p>
+
+            <p>Пройди короткий тест, чтобы понять, насколько хорошо ты знаешь об этой теме.</p>
+        </div>
+    </div>
+    <button id="start-quiz-btn" class="quiz-btn start-quiz-btn">НАЧАТЬ ТЕСТ</button>
+</div>
+
+<div id="overlay"></div>
+
+<div class="app">
+    <div id="comment-popup" class="comment-popup hidden">
+        <div class="comment-content">
+            <img id="comment-image" class="comment-image" src="">
+            <p id="comment-text">Подсказка появится здесь</p>
+            <div class="comment-arrow"></div>
+        </div>
+
+    </div>
+    <h1>Курение тест</h1>
+
+    <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+
+        <div id="answer-buttons" class="answer-buttons">
+        </div>
+
+        <div class="quiz-footer">
+            <button id="next-btn" class="quiz-btn next-btn">Далее</button>
+
+            <div class="nav-links">
+                <a href="../index.html" id="backtomenu-btn" class="nav-link">← На главную</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="QuizScriptDrugs.js"></script>
+</body>
+</html>

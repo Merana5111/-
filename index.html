@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta content="noindex, nofollow" name="robots">
+    <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
+    <title>SafeMode Quizzes | Режим Безопасности Квизы</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="webstyleEnglish.css" rel="stylesheet">
+</head>
+<body>
+<label>
+    <input type="checkbox">
+    <div class="sidebar-header"><img src="img/menu-icon.svg" alt="menu"></div>
+    <div class="sidebar">
+        <div class="sidebar-links">
+            <ul>
+                <li><a href="https://kids.pomogut.by/"><img src="img/imgCollege.png">Помощь подросткам</a></li>
+                <li class="dropdown-trigger">
+                    <a class="dropdown-link"><img src="img/phone.png">Телефон доверия ▼</a>
+                    <div class="dropdown-menu">
+                        <a href="tel:+375173200303">+375 (17) 320-03-03</a>
+                        <a href="tel:+375291234567">+375 (29) 123-45-67</a>
+                        <a href="tel:+375337654321">+375 (33) 765-43-21</a>
+                        <a href="tel:+375251112233">+375 (25) 111-22-33</a>
+                        <a href="tel:88001234567">8-800-123-45-67</a>
+                    </div>
+                </li>
+                <li><a href="mailto:uoggmk.spps@gmail.com"><img src="img/imgEnglish.png">Почта поддержки</a></li>
+            </ul>
+        </div>
+    </div>
+</label>
+
+<section>
+    <header>
+        <ul>
+            <li><a href="QuizCyberbulling/index.html">КИБЕРБУЛЛИНГ</a></li>
+            <li><a href="QuizSelfharm/index.html">САМОПОВРЕЖДЕНИЕ</a></li>
+            <li><a href="QuizDrugs/index.html">НАРКОТИКИ</a></li>
+            <li><a href="QuizScam/index.html">ОБМАН В ИНТЕРНЕТЕ</a></li>
+        </ul>
+    </header>
+
+    <div class="title-text">
+        <h1>Режим Безопасности</h1>
+        <p>Тест с квизами против кибербуллинга, селфхарма, курения и обмана в интернете. Проверьте свои знания о цифровой безопасности и узнайте, как защитить себя и близких от интернет-угроз. Интерактивные задания помогут распознать опасные ситуации и научиться правильно на них реагировать. После прохождения теста вы получите персональные рекомендации по улучшению цифровой грамотности и безопасности в сети.</p>
+    </div>
+
+    <div class="textBox">
+        <ul>
+            <li>
+                <a href="QuizCyberbulling/index.html">
+                    Кибербуллинг
+                    <p class="des-A1"><br>-запугивание и<br>травля с<br>использованием<br>цифровых технологий.</p>
+                    <div class="img-A1"><img src="img/cyberbulling.png"></div>
+                </a>
+            </li>
+            <li>
+                <a href="QuizSelfharm/index.html">
+                    Самоповреждение
+                    <p><br>-это преднамеренное<br>повреждения своего<br>тела по внутренним<br>причинам.</p>
+                    <div class="img-A2"><img src="img/selfharm.png"></div>
+                </a>
+            </li>
+            <li>
+                <a href="QuizDrugs/index.html">
+                    Наркотики
+                    <p><br>-это вещества,<br>вызывающие<br>зависимость и<br>разрушающие<br>организм.</p>
+                    <div class="img-B1"><img src="img/drugs.png"></div>
+                </a>
+            </li>
+            <li>
+                <a href="QuizScam/index.html">
+                    Обман в интернете
+                    <p><br>-когда вас обманом<br>заставляют отдать<br>деньги, личную<br>информацию или <br>доступ к счетам.</p>
+                    <div class="img-B2"><img src="img/scam.png"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="city">
+        <img src="img/Background%20(1).png" class="CityMobile">
+    </div>
+</section>
+
+<div class="decks-container">
+    <h2 class="main-title">Разрушаем мифы о социальных угрозах</h2>
+    <p class="main-subtitle">Каждая карточка — распространённое заблуждение. Нажми, чтобы узнать правду. Нажми ещё раз — перейди к следующему мифу</p>
+    <div id="decks-wrapper" class="decks-grid"></div>
+</div>
+
+<script>
+    const topicsData = {
+        cyberbullying: {
+            title: "Кибербуллинг",
+            icon: "",
+            cards: [
+                { myth: "Если игнорировать обидчика, он сам отстанет", fact: "Игнорирование часто приводит к эскалации. Нужно блокировать, сохранять скрины и обращаться к взрослым." },
+                { myth: "Кибербуллинг бывает только в соцсетях", fact: "Травля может происходить в играх, мессенджерах, на форумах, по email." },
+                { myth: "Анонимность в сети позволяет безнаказанно оскорблять", fact: "Любые действия оставляют цифровой след. Личность агрессора можно установить." },
+                { myth: "Если удалить переписку, доказательств нет", fact: "Скриншоты и сохраненные логи — полноценные доказательства." },
+                { myth: "Жаловаться на буллинг — значит показать слабость", fact: "Обращение за помощью — это проявление силы и самозащиты." },
+                { myth: "Слова в интернете не имеют значения", fact: "Слова в сети ранят так же сильно, как сказанные в лицо." },
+                { myth: "Буллинг — это норма взросления", fact: "Систематическая травля НЕ является нормой и требует вмешательства." },
+                { myth: "Лучше не вмешиваться в чужую травлю", fact: "Пассивное наблюдение подпитывает буллинг. Поддержка жертвы помогает." },
+                { myth: "Обидчики — всегда незнакомцы", fact: "В 80% случаев агрессор — знакомый: одноклассник или бывший друг." },
+                { myth: "Если меня не трогают, меня это не касается", fact: "Кибербуллинг формирует токсичную среду, от которой страдают все." }
+            ]
+        },
+        selfharm: {
+            title: "Самоповреждение",
+            icon: "",
+            cards: [
+                { myth: "Люди причиняют себе боль только для внимания", fact: "Это способ справиться с невыносимой эмоциональной болью, а не манипуляция." },
+                { myth: "Если человек режет себя, он сумасшедший", fact: "Селфхарм — симптом страдания, а не психическое расстройство." },
+                { myth: "Разговоры о селфхарме подтолкнут к нему других", fact: "Открытый разговор снижает стигму и помогает обратиться за помощью." },
+                { myth: "Самоповреждение — это попытка суицида", fact: "Чаще это способ выжить, но это серьезный фактор риска." },
+                { myth: "Лучше не лезть, пройдет само", fact: "Без поддержки селфхарм может перерасти в зависимость." },
+                { myth: "Только подростки занимаются селфхармом", fact: "Селфхарм встречается у людей всех возрастов." },
+                { myth: "Если нет глубоких порезов, проблема несерьезная", fact: "Любая форма — сигнал о внутреннем кризисе." },
+                { myth: "О селфхарме нельзя говорить с родителями", fact: "Большинство родителей хотят помочь. Можно начать разговор через письмо." },
+                { myth: "Лучшая поддержка — оставить в покое", fact: "Поддержка — это присутствие без осуждения." },
+                { myth: "Творчество и спорт не помогают", fact: "Замещающие техники работают как здоровый выход эмоций." }
+            ]
+        },
+        drugs: {
+            title: "Наркотики",
+            icon: "",
+            cards: [
+                { myth: "Один раз попробовать — не страшно", fact: "Зависимость может возникнуть с первых доз." },
+                { myth: "Легкие наркотики не опасны", fact: "Термин «легкие наркотики» — опасный миф." },
+                { myth: "Курение помогает расслабиться", fact: "Никотин создает иллюзию, но повышает тревожность." },
+                { myth: "Вейпы безопаснее сигарет", fact: "Жидкости содержат тяжелые металлы и никотин." },
+                { myth: "Смогу бросить в любой момент", fact: "Никотин изменяет химию мозга. Нужна помощь." },
+                { myth: "Наркотики делают жизнь интереснее", fact: "Эйфория быстро сменяется апатией и разрушением." },
+                { myth: "Мне ничего не грозит", fact: "Предложение может появиться неожиданно. Будь готов отказаться." },
+                { myth: "Зависимость — личный выбор", fact: "Зависимость — это хроническое заболевание." },
+                { myth: "Энергетики с алкоголем безвредны", fact: "Это маскирует опьянение и нагружает сердце." },
+                { myth: "Я легко откажусь, скажу нет", fact: "Давление может быть агрессивным. Заготовь фразы отказа." }
+            ]
+        },
+        scam: {
+            title: "Обман в интернете",
+            icon: "",
+            cards: [
+                { myth: "Меня не обманут, я осторожен", fact: "Мошенники используют психологию: страх и срочность." },
+                { myth: "Ссылке от друга можно доверять", fact: "Аккаунты взламывают. Всегда перепроверяй лично." },
+                { myth: "Сотрудник банка может спросить код", fact: "НИКТО не имеет права спрашивать код из СМС." },
+                { myth: "Можно случайно выиграть в лотерею", fact: "Любой «выигрыш», о котором вы не знали — мошенничество." },
+                { myth: "Фишинг легко распознать по ошибкам", fact: "Современные фишеры используют нейросети." },
+                { myth: "Криптовалюта — быстрый заработок", fact: "99% предложений — финансовые пирамиды." },
+                { myth: "Если ничего не покупаю, мне не страшно", fact: "Крадут данные для взлома и шантажа." },
+                { myth: "Романтические аферы — только в кино", fact: "Тысячи людей теряют деньги, влюбляясь в фейки." },
+                { myth: "Звонок с номера банка — гарантия", fact: "Номера подменяют. Перезвони сам на горячую линию." },
+                { myth: "2FA — это сложно и не нужно", fact: "Двухфакторка защищает даже при утечке пароля." }
+            ]
+        }
+    };
+
+    function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    class CardDeck {
+        constructor(container, topicKey, topicData) {
+            this.container = container;
+            this.topicKey = topicKey;
+            this.topicData = topicData;
+            this.cards = [];
+            this.isFlipped = false;
+            this.init();
+        }
+
+        init() {
+            const shuffled = shuffleArray([...this.topicData.cards]);
+            this.cards = shuffled.map((card, idx) => ({
+                id: idx,
+                myth: card.myth,
+                fact: card.fact
+            }));
+            this.isFlipped = false;
+            this.render();
+        }
+
+        handleCardClick() {
+            if (this.cards.length === 0) return;
+            if (!this.isFlipped) {
+                this.isFlipped = true;
+                this.render();
+            } else {
+                this.cards.shift();
+                this.isFlipped = false;
+                this.render();
+            }
+        }
+
+        render() {
+            if (!this.container) return;
+
+            const hasCards = this.cards.length > 0;
+            const remainingCount = this.cards.length;
+
+            if (!hasCards) {
+                this.container.innerHTML = `
+                    <div class="deck-area">
+                        <div class="empty-deck">
+                            <div class="empty-deck-icon"><img src="img/empty-inbox1.png"></div>
+                            <div class="empty-deck-text"></div>
+                        </div>
+                        <div class="cards-left empty">0 / ${this.topicData.cards.length}</div>
+                    </div>
+                `;
+                return;
+            }
+
+            const currentCard = this.cards[0];
+            const html = `
+                <div class="deck-area">
+                    <div class="cards-stack ${this.isFlipped ? 'flipped' : ''}" data-deck="${this.topicKey}">
+                        <div class="card-content">
+                            <div class="card-front">
+                                <div class="card-icon"><img src="img/close.png"></div>
+                                <div class="card-label">МИФ</div>
+                                <p class="card-text">${escapeHtml(currentCard.myth)}</p>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-icon"><img src="img/file.png"></div>
+                                <div class="card-label">ФАКТ</div>
+                                <p class="card-text">${escapeHtml(currentCard.fact)}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards-left">${remainingCount} / ${this.topicData.cards.length}</div>
+                </div>
+            `;
+            this.container.innerHTML = html;
+
+            const stack = this.container.querySelector('.cards-stack');
+            if (stack) {
+                stack.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.handleCardClick();
+                });
+            }
+        }
+    }
+
+    window.decks = {};
+
+    function createAllDecks() {
+        const wrapper = document.getElementById('decks-wrapper');
+        if (!wrapper) return;
+
+        const deckKeys = ['cyberbullying', 'selfharm', 'drugs', 'scam'];
+        const shuffledDecks = shuffleArray([...deckKeys]);
+
+        wrapper.innerHTML = '';
+
+        shuffledDecks.forEach((key) => {
+            const data = topicsData[key];
+            const deckDiv = document.createElement('div');
+            deckDiv.className = 'card-deck';
+            deckDiv.innerHTML = `
+                <div class="deck-header">
+                    <h3>
+                        <span>${data.icon}</span>
+                        ${escapeHtml(data.title)}
+                    </h3>
+                    <div class="deck-stats">${data.cards.length} карточек</div>
+                </div>
+                <div class="deck-cards-container" data-deck-id="${key}"></div>
+            `;
+            wrapper.appendChild(deckDiv);
+
+            const cardsContainer = deckDiv.querySelector('.deck-cards-container');
+            if (cardsContainer) {
+                window.decks[key] = new CardDeck(cardsContainer, key, data);
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        createAllDecks();
+
+        const checkbox = document.querySelector('input[type="checkbox"]');
+        const dropdownTrigger = document.querySelector('.dropdown-trigger');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+        const sidebar = document.querySelector('.sidebar');
+        const sidebarHeader = document.querySelector('.sidebar-header');
+        let dropdownOpen = false;
+
+        if (dropdownTrigger) {
+            dropdownTrigger.addEventListener('click', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                if (dropdownOpen) {
+                    dropdownMenu.style.display = 'none';
+                    dropdownOpen = false;
+                } else {
+                    dropdownMenu.style.display = 'block';
+                    dropdownOpen = true;
+                }
+            });
+        }
+
+        if (dropdownMenu) {
+            dropdownMenu.addEventListener('click', function(event) {
+                event.stopPropagation();
+            });
+            const phoneLinks = dropdownMenu.querySelectorAll('a');
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                });
+            });
+        }
+
+        document.addEventListener('click', function(event) {
+            if (dropdownMenu && dropdownMenu.contains(event.target)) return;
+            if (dropdownTrigger && dropdownTrigger.contains(event.target)) return;
+            if (checkbox && checkbox.checked &&
+                !sidebar.contains(event.target) &&
+                !sidebarHeader.contains(event.target)) {
+                checkbox.checked = false;
+            }
+        });
+
+        if (sidebarHeader) {
+            sidebarHeader.addEventListener('click', function(event) {
+                event.stopPropagation();
+                if (window.innerWidth <= 600) {
+                    sidebar.classList.toggle('active');
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>

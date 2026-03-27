@@ -199,7 +199,7 @@ function showRobotReaction(isCorrect) {
     if (!robotContainer || !robotGif) return;
 
     if (isCorrect) {
-        setRobotGif('../video/Happy.gif');
+        setRobotGif('../video/happy.gif');
     } else {
         setRobotGif('../video/error.gif');
     }

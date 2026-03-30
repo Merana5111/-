@@ -380,7 +380,7 @@ function initVideoFunctionality() {
     videoModal.innerHTML = `
         <div class="video-modal-content">
             <div class="close-video-modal">×</div>
-            <iframe src="https://www.youtube.com/embed/i-diuTg6LH8?rel=0" 
+            <iframe src="https://www.youtube.com/embed/baTPOX7W28c?rel=0" 
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     allowfullscreen>
@@ -394,7 +394,7 @@ function initVideoFunctionality() {
             videoModal.classList.add('active');
             document.body.style.overflow = 'hidden';
             const modalIframe = videoModal.querySelector('iframe');
-            modalIframe.src = 'https://www.youtube.com/embed/i-diuTg6LH8?rel=0';
+            modalIframe.src = 'https://www.youtube.com/embed/baTPOX7W28c?rel=0';
         });
     }
 

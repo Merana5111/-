@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приватность в соцсетях викторина</title>
+    <link rel="stylesheet" href="QuizStyleScam.css">
+</head>
+<body>
+
+<a href="../index.html" class="back-to-main-btn">НА ГЛАВНУЮ</a>
+<div class="modal" id="welcome-modal">
+    <div class="modal-content-wrapper">
+        <div class="modal-header">
+            <div class="title">ПРИВАТНОСТЬ В СОЦСЕТЯХ</div>
+            <button data-close-button class="close-button"><img src="imgQuiz/close.svg" alt="Закрыть"></button>
+        </div>
+        <div class="what-is-subtitle" style="text-align: center; font-size: 1.1rem; font-weight: 700; color: #2f2385; margin-top: -5px;">Что это такое?</div>
+        <div class="modal-body">
+            <p>Эта викторина поможет вам проверить свои знания о цифровой приватности и научиться контролировать свой «цифровой след». Социальные сети — это зеркало вашей жизни, но каждое фото, пост или геометка может стать инструментом в руках злоумышленников, мошенников или буллеров.
+
+                В отличие от реального общения, где вы сами выбираете собеседника, в интернете ваши данные могут быть скопированы, сохранены и использованы против вас даже спустя годы. Аферисты анализируют открытые профили, чтобы узнавать дни рождения, имена родственников, места работы и увлечения для персонализированного обмана.</p>
+
+            <div class="modal-video-corner" id="video-corner">
+                <div class="video-thumbnail" id="video-thumbnail">
+                    <div class="play-button">
+                        <img src="imgQuiz/icons8-play-64.png">
+                    </div>
+                </div>
+                <iframe id="youtube-iframe"
+                        src="https://www.youtube.com/embed/-f2AIfRAZRY?rel=1"
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="display: none;">
+                </iframe>
+            </div>
+            <p>Приватность — это не паранойя, а осознанный контроль. Публикация фото билетов, ключей от квартиры или геолокации в реальном времени («смотрите, я в отпуске!») — это прямой сигнал для воров, что ваш дом пуст. А излишняя откровенность в профилях помогает мошенникам подбирать пароли и отвечать на «секретные вопросы» банков.</p>
+            <p>Пройди короткий тест, чтобы понять, насколько хорошо ты защищаешь свою личную жизнь и умеешь ли распознавать угрозы в безобидных, на первый взгляд, публикациях.</p>
+        </div>
+    </div>
+    <button id="start-quiz-btn" class="quiz-btn start-quiz-btn">НАЧАТЬ ТЕСТ</button>
+</div>
+
+<div class="modal" id="result-modal">
+    <div class="modal-content-wrapper">
+        <div class="modal-header">
+            <div class="title">РЕЗУЛЬТАТ ТЕСТА</div>
+            <marquee id="juzz-up-text" behavior="scroll" direction="left" scrollamount="6">
+                «Ваши данные — это ваша собственность». Не отдавайте их бесплатно сомнительным приложениям и викторинам. • «Интернет помнит всё». Удалив пост, вы не гарантируете, что его не заскринили другие. • «Приватность — это право, а не привилегия». Настраивайте настройки доступа так, как комфортно именно вам.
+            </marquee>
+        </div>
+        <div class="modal-body result-body">
+        </div>
+    </div>
+    <div class="result-buttons" style="display: flex; gap: 20px; justify-content: center; padding: 20px;">
+        <button id="restart-quiz-btn" class="quiz-btn">ПРОЙТИ СНОВА</button>
+        <button id="result-to-main-btn" class="quiz-btn">НА ГЛАВНУЮ</button>
+    </div>
+</div>
+
+
+<div id="overlay"></div>
+
+<div class="app">
+    <div id="comment-popup" class="comment-popup hidden">
+        <div class="comment-content">
+            <div class="fact-header">ФАКТ</div>
+            <img id="comment-image" class="comment-image" src="">
+            <p id="comment-text">Подсказка появится здесь</p>
+            <div class="comment-arrow"></div>
+        </div>
+
+    </div>
+    <h1>Приватность в соцсетях тест</h1>
+
+    <div class="quiz">
+        <h2 id="question">Question goes here</h2>
+
+        <div id="answer-buttons" class="answer-buttons">
+        </div>
+
+        <div class="quiz-footer">
+            <button id="next-btn" class="quiz-btn next-btn">Далее</button>
+
+            <div class="nav-links">
+                <a href="../index.html" id="backtomenu-btn" class="nav-link">← На главную</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="robotCompanion" class="robot-container">
+    <img id="robotGif" src="../video/idle.gif" alt="Robot Assistant" class="robot-gif">
+</div>
+
+<script src="QuizScriptScam.js"></script>
+</body>
+</html>
